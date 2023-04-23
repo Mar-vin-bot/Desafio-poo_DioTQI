@@ -1,5 +1,6 @@
 package org.example;
 
+import com.br.dio.desafio.dominio.Conteudo;
 import com.br.dio.desafio.dominio.Curso;
 import com.br.dio.desafio.dominio.Mentoria;
 
@@ -8,9 +9,11 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
 
-        Curso c1 = new Curso("meu curso", "como ser eu", 32);
-        Mentoria m1 = new Mentoria("to indo", "um dia apos o outro", LocalDate.now());
-        System.out.println(c1.toString());
-        System.out.println(m1.toString());
+
+        Conteudo curso1  = new Curso("Curso de java", "asdfcd", 8);
+        Conteudo mentoria = new Mentoria("qualquer titulo", "uma ajuda aqui", LocalDate.now());
+        System.out.println(curso1);
+        System.out.println(mentoria);
+
     }
 }
