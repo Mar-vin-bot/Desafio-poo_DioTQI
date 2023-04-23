@@ -16,7 +16,7 @@ public class Dev {
     }
 
     public void progredir(){
-        Optional<Conteudo> conteudo this.conteudoInscrito.stream().findFirst();
+        Optional<Conteudo> conteudo = this.conteudoInscrito.stream().findFirst();
         if(conteudo.isPresent()){
             this.conteudoConcluidos.add(conteudo.get());
             this.conteudoInscrito.remove(conteudo.get());
@@ -40,19 +40,19 @@ public class Dev {
         this.name = name;
     }
 
-    public set<Conteudo> getConteudoInscrito() {
+    public Set<Conteudo> getConteudoInscrito() {
         return conteudoInscrito;
     }
 
-    public void setConteudoInscrito(set<Conteudo> conteudoInscrito) {
+    public void setConteudoInscrito(Set<Conteudo> conteudoInscrito) {
         this.conteudoInscrito = conteudoInscrito;
     }
 
-    public set<Conteudo> getConteudoConcluidos() {
+    public Set<Conteudo> getConteudoConcluidos() {
         return conteudoConcluidos;
     }
 
-    public void setConteudoConcluidos(set<Conteudo> conteudoConcluidos) {
+    public void setConteudoConcluidos(Set<Conteudo> conteudoConcluidos) {
         this.conteudoConcluidos = conteudoConcluidos;
     }
 
